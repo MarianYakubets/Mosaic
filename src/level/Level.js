@@ -1,9 +1,7 @@
-Mosaic.Level = function (number, width, heigth, targets, figures) {
+Mosaic.Level = function (number, sketches, figures) {
     this.number = number;
+    this.sketches = sketches;
     this.figures = figures;
-    this.width = width;
-    this.heigth = heigth;
-    this.targets = targets;
 };
 
 Mosaic.Level.prototype = {};

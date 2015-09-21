@@ -1,8 +1,6 @@
-Mosaic.Triangle = function (type,color) {
+Mosaic.Triangle = function (type, color) {
     this.type = type;
     this.color = color;
 };
 
-Mosaic.Triangle.prototype = {
-
-};
+Mosaic.Triangle.prototype = {};

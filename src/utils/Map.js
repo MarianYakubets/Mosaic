@@ -1,6 +1,6 @@
 Mosaic.Map = function () {
     this.keys = new Array();
-    this.data = new Array();
+    this.data = new Object();
 };
 
 Mosaic.Map.prototype = {
