@@ -19,13 +19,7 @@ Mosaic.Game = function (game) {
     this.rnd; //  the repeatable random number generator (Phaser.RandomDataGenerator)
     //Own
     this.map;
-
     this.level;
-    this.backLayerHolder;
-    this.frontLayerHolder;
-
-    this.moveX = 50;
-    this.moveY = 200;
     this.tileSize = 128;
     this.halfTileSize = this.tileSize / 2;
 
@@ -35,20 +29,15 @@ Mosaic.Game = function (game) {
 };
 
 Mosaic.Game.prototype = {
-    init: function () {},
+    init: function (level) {
+        this.level=level
+    },
 
     create: function () {
         //  Honestly, just about anything could go here. It's YOUR game after all. Eat your heart out!
         this.add.sprite(0, 0, 'green');
         this.map = this.game.add.tilemap();
         this.map.addTilesetImage('square', 'square', this.tileSize, this.tileSize);
-
-        this.stub();
-    },
-
-    stub: function () {
-        var cell = new Mosaic.Cell(0, 0, [new Mosaic.Triangle(Mosaic.TriangleTypes.BOTTOM, 'red'), new Mosaic.Triangle(Mosaic.TriangleTypes.LEFT, 'blue')]);
-        alert(cell.getTriangle(Mosaic.TriangleTypes.BOTTOM).color);
     },
 
     update: function () {
