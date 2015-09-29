@@ -30,12 +30,13 @@ Mosaic.Game = function (game) {
 
 Mosaic.Game.prototype = {
     init: function (level) {
-        this.level=level
+        this.level = level
     },
 
     create: function () {
         //  Honestly, just about anything could go here. It's YOUR game after all. Eat your heart out!
         this.add.sprite(0, 0, 'green');
+        this.add.sprite(128, 128, 'hex');
         this.map = this.game.add.tilemap();
         this.map.addTilesetImage('square', 'square', this.tileSize, this.tileSize);
     },
