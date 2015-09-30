@@ -22,8 +22,8 @@ Mosaic.MainMenu.prototype = {
         this.state.start('Game', true, false, new Mosaic.Level(1, this.createSketchStub()));
     },
 
-    createSketchStub:function(){
-        var cells = new Mosaic.CellMap(2,2);
+    createSketchStub: function () {
+        var cells = new Mosaic.CellMap(2, 2);
         var cell = new Mosaic.Cell(0, 0, [new Mosaic.Triangle(Mosaic.TriangleTypes.BOTTOM, 'red'), new Mosaic.Triangle(Mosaic.TriangleTypes.LEFT, 'blue')]);
         cells.put(0, 0, cell);
         cells.put(1, 0, new Mosaic.Cell(0, 0, [new Mosaic.Triangle(Mosaic.TriangleTypes.BOTTOM, 'red'), new Mosaic.Triangle(Mosaic.TriangleTypes.LEFT, 'blue')]));

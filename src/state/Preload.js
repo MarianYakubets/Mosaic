@@ -22,9 +22,8 @@ Mosaic.Preload.prototype = {
 
         //	Here we load the rest of the assets our game needs.
         //	As this is just a Project Template I've not provided these assets, swap them for your own.
-        this.load.image('green', 'res/img/green.jpg');
+        this.load.image('alizarin', 'res/img/alizarin.jpg');
         this.load.image('hex', 'res/img/hex_128.png');
-        this.load.image('tiles', 'res/img/tiles64.png');
         //	+ lots of other required assets here
 
     },
